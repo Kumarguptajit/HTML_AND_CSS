@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tables</title>
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            text-align: center;
+            color: green;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(odd) {
+            background-color: #373030;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: cascade;">
+            <col />
+        </colgroup>
+        <tr>
+            <th colspan="3">Name</th>
+            <th>Country</th>
+            <th>ZIP code </th>
+        </tr>
+        <tr>
+            <td>Ram</td>
+            <td>India</td>
+            <td>220022</td>
+        </tr>
+        <tr>
+            <td>Jamie</td>
+            <td>India</td>
+            <td>220020</td>
+        </tr>
+        <tr>
+            <td>Harish</td>
+            <td>USA</td>
+            <td>212022</td>
+        </tr>
+        <tr>
+            <td>Venkatraman</td>
+            <td>India</td>
+            <td>463322</td>
+        </tr>
+    </table>
+</body>
+</html>
