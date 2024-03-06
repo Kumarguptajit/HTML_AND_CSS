@@ -1,36 +1,14 @@
-html {
-    font-size: 22px;
-}
 
 body {
-
-}
-
-main {
-    font-family: monospace;
-}
-
-h1, h2 {
-    background-color: blue;
+    font-size: 22px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.5;
+    background-color: #ffefd5;
+    color: rgb(0,0,0);
 
 }
 
 p {
-    font-size: 16px;
+    color: rgb(0,0,0, 0.5);
 }
 
-p span {
-    font-size: 24px;
-    color: red;
-}
-
-/* Class starts with . */
-.gray {
-    color: gray;
-}
-
-/* ID Selector # */
-
-#second {
-    color: #14a921;
-}
