@@ -1,37 +1,110 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-  font-size: 1.5rem;
   font-family: "Roboto", sans-serif;
+  font-size: 1.5rem;
+  min-height: 200vh;
 }
 
-.columns {
-    /* column-count: 4;
-    column-width: 250px; */
-    columns: 4 250px;
-    column-rule: 3px solid #333;
+.outer-container {
+  border: 3px dashed #000;
+  width: 75vw;
+  height: 85vh;
+  margin: 40px auto;
 }
 
-.columns p {
-    margin-top: 0;
+.inner-container {
+  border: 2px solid #00f;
+  width: 40vw;
+  height: 50vh;
+  margin: 200px auto;
+
 }
 
-.columns h2 {
-    margin-top: 0;
-    color: #fff;
-    background-color: #333;
-    padding: 1rem;
-    break-inside: avoid;
+.box {
+  width: 150px;
+  height: 150px;
+  color: #fff;
+  padding: 1rem;
+  margin: 0;
 }
 
-.columns .quote {
-    margin-top: 2rem;
-    font-size: 3rem;
-    text-align: center;
-    color: #333;
-    column-span: all;
+.absolute {
+    background-color: #00f;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
-.nowrap {
-    white-space: nowrap;
+.relative {
+    background-color: #f00;
+    position: relative;
+    top: 200px;
+    left: 100px;
+}
+
+.fixed {
+    background-color: #054305;
+    position: fixed;
+    top: 100px;
+}
+
+.sticky {
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
+
+
+/* Remember to disappear */
+
+html { scroll-behavior: smooth;}
+.section {
+  height: 100vh;
+}
+
+.blue { background-color: #00f; }
+.red { background-color: #f00; }
+.green { background-color: #0f0; }
+
+header, footer {
+  color: #fff;
+  text-align: center;
+  height: 100px;
+  
+}
+
+header {
+  position: sticky;
+  top: 0;
+  font-size: 5rem;
+}
+
+footer {
+  background-color: #000;
+  position: fixed;
+  bottom: 0;
+  font-size: 3rem;
+}
+
+a:visited {
+  color: #fff;
+}
+
+.social {
+  background-color: royalblue;
+  color: #fff;
+  font-size: inherit;
+  padding: 1rem;
+  position: fixed;
+  top: 30%;
+  left: 0;
+  z-index: 1;
 }
