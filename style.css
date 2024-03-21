@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Lobster&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 * {
   margin: 0;
@@ -8,103 +8,40 @@
 
 body {
   font-family: "Roboto", sans-serif;
-  font-size: 1.5rem;
-  min-height: 200vh;
+  min-height: 100vh;
+  padding: 20px;
 }
 
-.outer-container {
-  border: 3px dashed #000;
-  width: 75vw;
-  height: 85vh;
-  margin: 40px auto;
-}
-
-.inner-container {
-  border: 2px solid #00f;
-  width: 40vw;
-  height: 50vh;
-  margin: 200px auto;
-
-}
+.container {
+  max-width: 800px;
+  min-height: 400px;
+  margin-inline: auto;
+  border: 1px solid #000;
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  align-items: center;
+  flex-flow: row wrap;
+  align-content: center;
+} 
 
 .box {
-  width: 150px;
-  height: 150px;
-  color: #fff;
-  padding: 1rem;
-  margin: 0;
-}
-
-.absolute {
-    background-color: #00f;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-}
-
-.relative {
-    background-color: #f00;
-    position: relative;
-    top: 200px;
-    left: 100px;
-}
-
-.fixed {
-    background-color: #054305;
-    position: fixed;
-    top: 100px;
-}
-
-.sticky {
-    background-color: #000;
-    position: sticky;
-    top: 0;
-}
-
-
-/* Remember to disappear */
-
-html { scroll-behavior: smooth;}
-.section {
-  height: 100vh;
-}
-
-.blue { background-color: #00f; }
-.red { background-color: #f00; }
-.green { background-color: #0f0; }
-
-header, footer {
-  color: #fff;
-  text-align: center;
+  min-width: 100px;
   height: 100px;
-  
-}
-
-header {
-  position: sticky;
-  top: 0;
-  font-size: 5rem;
-}
-
-footer {
   background-color: #000;
-  position: fixed;
-  bottom: 0;
-  font-size: 3rem;
+  color: #fff;
+  font-size: 2rem;
+  padding: 0.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  flex: 1 1 150px;
 }
 
-a:visited {
-  color: #fff;
+.box:nth-child(2) {
+  flex: 2 2 150px;
+  order: -1;
 }
 
-.social {
-  background-color: royalblue;
-  color: #fff;
-  font-size: inherit;
-  padding: 1rem;
-  position: fixed;
-  top: 30%;
-  left: 0;
-  z-index: 1;
-}
